@@ -45,8 +45,8 @@
   }
 
   .card-product {
-    @apply bg-white group cursor-pointer transition-transform duration-200 hover:-translate-y-0.5;
-  }
+      @apply bg-white cursor-pointer transition-transform duration-200 hover:-translate-y-0.5;  
+    }
 
   .badge {
     @apply absolute top-3 left-3 text-[10px] tracking-widest uppercase px-2.5 py-1;
