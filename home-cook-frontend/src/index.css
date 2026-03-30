@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    @apply bg-cream text-espresso font-body antialiased;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 { @apply font-display; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block bg-terracotta text-cream text-xs tracking-widest uppercase px-7 py-3.5
+           transition-all duration-200 hover:bg-brand-600 active:scale-95;
+  }
+
+  .btn-ghost {
+    @apply inline-block border border-terracotta text-terracotta text-xs tracking-widest uppercase px-6 py-3
+           transition-all duration-200 hover:bg-terracotta hover:text-cream active:scale-95;
+  }
+
+  .btn-dark {
+    @apply inline-block bg-espresso text-cream text-xs tracking-widest uppercase px-7 py-3.5
+           transition-all duration-200 hover:bg-brand-800 active:scale-95;
+  }
+
+  .section-label {
+    @apply text-[10px] tracking-[0.14em] text-terracotta uppercase mb-2;
+  }
+
+  .section-title {
+    @apply font-display text-2xl md:text-3xl text-espresso mb-8;
+  }
+
+  .input-field {
+    @apply w-full border border-brand-200 bg-white px-4 py-3 text-sm text-espresso
+           focus:outline-none focus:border-terracotta transition-colors duration-200
+           placeholder:text-brand-300;
+  }
+
+  .card-product {
+    @apply bg-white group cursor-pointer transition-transform duration-200 hover:-translate-y-0.5;
+  }
+
+  .badge {
+    @apply absolute top-3 left-3 text-[10px] tracking-widest uppercase px-2.5 py-1;
+  }
+
+  .badge-new       { @apply bg-terracotta text-cream; }
+  .badge-sale      { @apply bg-espresso text-cream; }
+  .badge-best      { @apply bg-brand-300 text-espresso; }
+  .badge-out       { @apply bg-brand-200 text-brand-700; }
+
+  .nav-link {
+    @apply text-[13px] text-brand-700 hover:text-terracotta transition-colors tracking-wide;
+  }
+
+  .admin-card {
+    @apply bg-white border border-brand-100 p-6;
+  }
+
+  .status-badge {
+    @apply inline-flex items-center px-2.5 py-1 text-[10px] tracking-wider uppercase font-medium;
+  }
+}
+
+@layer utilities {
+  .text-price { @apply font-body font-medium text-terracotta; }
+  .text-price-old { @apply font-body text-brand-300 line-through; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+}
+
+.marquee-track { animation: marquee 35s linear infinite; }
