@@ -7,8 +7,8 @@ import useAuthStore from '../context/authStore'
 import toast from 'react-hot-toast'
 
 const HERO_IMAGES = [
-  'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=85',
-  'https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=1200&q=85',
+  '/images/hero1.jpg',
+  '/images/hero3.jpg',
 ]
 
 const TRUST = [
@@ -117,7 +117,7 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-espresso/10" />
           <div className="absolute bottom-8 right-8 bg-cream/95 p-5 max-w-[200px]">
             <p className="text-[10px] tracking-widest text-terracotta uppercase mb-1">Featured</p>
-            <p className="font-display text-sm text-espresso leading-snug">Enamelled Cast Iron Pot</p>
+            <p className="font-display text-sm text-espresso leading-snug">Copper Container</p>
             <p className="text-price text-sm mt-2">₹12,499</p>
           </div>
         </div>
@@ -183,7 +183,7 @@ export default function HomePage() {
       {/* SPLIT BANNER */}
       <section className="grid md:grid-cols-2" style={{ minHeight: 380 }}>
         <div className="relative overflow-hidden flex flex-col justify-end p-10 md:p-14" style={{ minHeight: 320 }}>
-          <img src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=900&q=80" alt="Collection" className="absolute inset-0 w-full h-full object-cover" />
+          <img src="/images/story.jpg" alt="Collection" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-espresso/60" />
           <div className="relative z-10">
             <p className="text-[10px] tracking-widest text-sand uppercase mb-3">Limited edition</p>
@@ -194,11 +194,11 @@ export default function HomePage() {
           </div>
         </div>
         <div className="relative overflow-hidden flex flex-col justify-end p-10 md:p-14" style={{ minHeight: 320 }}>
-          <img src="https://images.unsplash.com/photo-1585837575652-267c041d77d4?w=900&q=80" alt="Cast iron" className="absolute inset-0 w-full h-full object-cover" />
+          <img src="/images/img.jpg" alt="Cast iron" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-terracotta/50" />
           <div className="relative z-10">
             <p className="text-[10px] tracking-widest text-cream/70 uppercase mb-3">Care &amp; craft</p>
-            <h3 className="font-display text-3xl text-cream mb-4 leading-tight">Why we love<br />cast iron</h3>
+            <h3 className="font-display text-3xl text-cream mb-4 leading-tight">Why we love<br />Copper Cookwares</h3>
             <Link to="/shop?category=cookware" className="text-xs tracking-widest uppercase text-cream border-b border-cream/40 pb-0.5 hover:border-cream transition-colors">
               Read the journal
             </Link>
@@ -225,7 +225,7 @@ export default function HomePage() {
       {/* STORY SECTION */}
       <section className="grid md:grid-cols-2" style={{ minHeight: 460 }}>
         <div className="overflow-hidden bg-brand-200" style={{ minHeight: 360 }}>
-          <img src="https://images.unsplash.com/photo-1614963590047-d5a32c9aeedd?w=900&q=80" alt="Our story" className="w-full h-full object-cover" />
+          <img src="/images/story1.jpg" alt="Our story" className="w-full h-full object-cover" />
         </div>
         <div className="bg-white flex flex-col justify-center px-10 md:px-16 py-16">
           <p className="section-label">Our story</p>

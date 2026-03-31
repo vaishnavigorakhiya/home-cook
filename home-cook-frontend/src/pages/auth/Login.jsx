@@ -30,7 +30,7 @@ export default function LoginPage() {
     <div className="min-h-[80vh] grid md:grid-cols-2 animate-fade-in">
       {/* Left image */}
       <div className="hidden md:block relative overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80" alt="Kitchen" className="w-full h-full object-cover" />
+        <img src="/images/img1.jpg" alt="Kitchen" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-espresso/50" />
         <div className="absolute bottom-16 left-10 right-10">
           <p className="font-display text-3xl text-cream mb-3">Welcome back to<br />Home &amp; Cook</p>
